@@ -41,10 +41,7 @@ public class AddressBuilder {
         String zip = input.nextLine();
 
         // can change to chained append calls
-        fullAddressStringBuilder.append("\n" + addressType + " Address:\n" +
-                street + "\n" + city + ", " +
-                state + " " + zip
-        );
+        fullAddressStringBuilder.append("\n").append(addressType).append(" Address:\n").append(street).append("\n").append(city).append(", ").append(state).append(" ").append(zip);
         return fullAddressStringBuilder.toString();
     }
 }
